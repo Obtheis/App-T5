@@ -1,20 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View, TextInput, Image, ScrollView, SafeAreaView } from "react-native";
+import Login from "./src/screen/Login";
+import Home from "./src/screen/Home";
+import SignUp from "./src/screen/SignUp";
+import IndexPage from "./src/screen";
+import TodoList from "./src/screen/todoList";
 
 export default function App() {
+const name="Phu";
+const age=15;
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <TodoList/>
+    </SafeAreaView>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    // justifyContent: "center",
+    // alignItems: "center",
+  }
 });
+
